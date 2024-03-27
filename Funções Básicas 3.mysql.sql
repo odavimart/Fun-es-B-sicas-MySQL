@@ -1,0 +1,29 @@
+SELECT
+	*
+FROM clientes;
+
+-- USANDO O COUNT --
+
+SELECT
+	COUNT(Nome)
+FROM clientes;
+
+-- USANDO O COUNT (*) --
+
+SELECT 
+	COUNT(*)
+FROM clientes;
+
+-- USANDO O COUNT DISTINCT --
+
+SELECT
+	COUNT(DISTINCT Escolaridade)
+FROM clientes;
+
+-- AGRUPANDO TODAS AS INFORMAÇÕES DE DADOS --
+
+SELECT
+	COUNT(Nome),
+	COUNT(*),
+	COUNT(DISTINCT Escolaridade)
+FROM clientes
